@@ -1,0 +1,241 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Minecraftia', sans-serif;
+    background: url('https://i.hizliresim.com/3amnewq.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.server-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.server-logo:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.background-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 1200px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1.animated-text {
+    font-size: 4em;
+    color: #8bc34a;
+    animation: colorChange 5s infinite;
+}
+
+p {
+    font-size: 2em;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.copy-text {
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copy-btn {
+    background-color: #8bc34a;
+    border: none;
+    color: white;
+    padding: 3px 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #6a9c30;
+}
+
+.copy-btn.animate {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.social-media {
+    margin-bottom: 30px;
+}
+
+.social-media .btn {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: transform 0.3s ease;
+}
+
+.social-media .btn:hover {
+    transform: scale(1.2);
+}
+
+.social-media .discord {
+    color: #7289da;
+}
+
+.social-media .instagram {
+    color: #e4405f;
+}
+
+.social-media .youtube {
+    color: #ff0000;
+}
+
+.about, .rules {
+    margin-top: 30px;
+}
+
+.about h2, .rules h2 {
+    font-size: 2.5em;
+    color: #ffeb3b;
+}
+
+.about p, .rules p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    h1.animated-text {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .copy-btn {
+        font-size: 0.9em;
+    }
+
+    .social-media .btn {
+        font-size: 1.5em;
+    }
+
+    .about h2, .rules h2 {
+        font-size: 2em;
+    }
+
+    .about p, .rules p {
+        font-size: 1em;
+    }
+
+    .server-logo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.animated-text {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .copy-btn {
+        font-size: 0.8em;
+    }
+
+    .social-media .btn {
+        font-size: 1.2em;
+    }
+
+    .about h2, .rules h2 {
+        font-size: 1.8em;
+    }
+
+    .about p, .rules p {
+        font-size: 0.9em;
+    }
+
+    .server-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #8bc34a;
+    }
+    25% {
+        color: #ffeb3b;
+    }
+    50% {
+        color: #ff5722;
+    }
+    75% {
+        color: #03a9f4;
+    }
+    100% {
+        color: #8bc34a;
+    }
+}
