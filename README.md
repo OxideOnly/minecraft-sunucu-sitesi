@@ -7,4 +7,4 @@ Minecraft oyuncuları ve sunucu sahiplerinin kullanabileceği basit bir sunucu t
 `<img src="https://i.hizliresim.com/kbedf4a.jpg" alt="Sunucu Logosu" class="server-logo">` bölümünde ki sunucu logosunu kendi logonuz ile değiştiriniz. Link formatı **.png .jpg** olmalı.
 Meta taglarını düzenlemeyi unutmayın :)
 
-### Demo: 
+### Demo: https://minecraft-sunucu-sitesi.vercel.app/
